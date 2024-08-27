@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GrindChat.MAUI.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,20"
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="CenterAndExpand">
+
+
+            <Image
+                Source="grindwheel.png"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="GrindChat!"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="UsernameEntry"
+                Placeholder="Username"
+                WidthRequest="200"
+                HeightRequest="30"
+                HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="PasswordEntry"
+                Placeholder="Password"
+                IsPassword="True"
+                WidthRequest="200"
+                HeightRequest="30"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="SigninBtn"
+                Text="SIGN IN"
+                WidthRequest="200"
+                HeightRequest="30"
+                Clicked="SigninBtnClicked"
+                Command="{Binding Path = EditCommand}"
+                CommandParameter="{Binding}"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="SignupBtn"
+                Text="SIGN UP"
+                WidthRequest="200"
+                HeightRequest="30"
+                Clicked="SignupBtnClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

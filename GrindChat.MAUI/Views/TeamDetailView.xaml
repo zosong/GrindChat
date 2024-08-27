@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:GrindChat.MAUI.ViewModels"
+             xmlns:c="clr-namespace:GrindChat.MAUI.Controls"
+             x:Class="GrindChat.MAUI.Views.TeamDetailView"
+             Title="TeamDetailView"
+             NavigatedTo="OnArrived">
+    <Grid HorizontalOptions="CenterAndExpand" Padding="0,100,0,0">
+        <Grid WidthRequest="700">
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="500"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0"
+                   Padding="10"
+                   Text="Team Name: " />
+                    <Entry Grid.Column="1" Text="{Binding Path=Model.TeamName}"/>
+                </Grid>
+                <Button Text="Save" Clicked="OkClicked"/>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

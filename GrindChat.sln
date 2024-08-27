@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrindChat.Library", "GrindChat.Library\GrindChat.Library.csproj", "{76AD78B3-A0EB-4E30-939F-8F3A830894AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CEN4090L Assignments", "CEN4090L Assignments", "{4C4C381A-8F91-41F2-848D-D8ADA8388868}"
+	ProjectSection(SolutionItems) = preProject
+		..\Proposal template.docx = ..\Proposal template.docx
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrindChat.MAUI", "GrindChat.MAUI\GrindChat.MAUI.csproj", "{B794447D-3C0C-46CA-935A-B6C925E3756A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{76AD78B3-A0EB-4E30-939F-8F3A830894AB} = {76AD78B3-A0EB-4E30-939F-8F3A830894AB}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrindChat.API", "GrindChat.API\GrindChat.API.csproj", "{DE8F6F06-8000-4164-883B-2C0E39541C48}"
+	ProjectSection(ProjectDependencies) = postProject
+		{76AD78B3-A0EB-4E30-939F-8F3A830894AB} = {76AD78B3-A0EB-4E30-939F-8F3A830894AB}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76AD78B3-A0EB-4E30-939F-8F3A830894AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76AD78B3-A0EB-4E30-939F-8F3A830894AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76AD78B3-A0EB-4E30-939F-8F3A830894AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76AD78B3-A0EB-4E30-939F-8F3A830894AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B794447D-3C0C-46CA-935A-B6C925E3756A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B794447D-3C0C-46CA-935A-B6C925E3756A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B794447D-3C0C-46CA-935A-B6C925E3756A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B794447D-3C0C-46CA-935A-B6C925E3756A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B794447D-3C0C-46CA-935A-B6C925E3756A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B794447D-3C0C-46CA-935A-B6C925E3756A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DE8F6F06-8000-4164-883B-2C0E39541C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE8F6F06-8000-4164-883B-2C0E39541C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE8F6F06-8000-4164-883B-2C0E39541C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE8F6F06-8000-4164-883B-2C0E39541C48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B2D555E-3D27-42BE-8F41-8C8D4F17E593}
+	EndGlobalSection
+EndGlobal
